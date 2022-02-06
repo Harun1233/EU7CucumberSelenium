@@ -1,0 +1,120 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-06T20:08:05.025Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10991400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Menu Options",
+        "description": "",
+        "id": "contacs-page;menu-options",
+        "after": [
+          {
+            "result": {
+              "duration": 990454900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4825287600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10508142000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user logged in as \"driver\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"driver\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1997700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user should see following options",
+            "match": {
+              "location": "com.vytrack.step_definitions.ContacsStepDefs.the_user_should_see_following_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Fleet"
+                ]
+              },
+              {
+                "cells": [
+                  "Customers"
+                ]
+              },
+              {
+                "cells": [
+                  "Activities"
+                ]
+              },
+              {
+                "cells": [
+                  "System"
+                ]
+              },
+              {
+                "cells": [
+                  "Marketing"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Contacs page",
+    "description": "",
+    "id": "contacs-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Contacts.feature",
+    "tags": []
+  }
+]

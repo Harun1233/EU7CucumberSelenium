@@ -1,13 +1,34 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-06T20:35:14.469Z",
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4807655900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-06T21:36:22.955Z",
         "before": [
           {
             "result": {
-              "duration": 12992400,
+              "duration": 1999800,
               "status": "passed"
             },
             "match": {
@@ -15,14 +36,14 @@
             }
           }
         ],
-        "line": 15,
-        "name": "Menu Options",
+        "line": 8,
+        "name": "Login as a driver",
         "description": "",
-        "id": "contacs-page;menu-options",
+        "id": "users-should-be-able-to-login;login-as-a-driver",
         "after": [
           {
             "result": {
-              "duration": 1079125000,
+              "duration": 1059427700,
               "status": "passed"
             },
             "match": {
@@ -35,81 +56,231 @@
         "steps": [
           {
             "result": {
-              "duration": 5206078100,
+              "duration": 3661877900,
               "status": "passed"
             },
-            "line": 16,
-            "name": "the user is on the login page",
+            "line": 9,
+            "name": "the user enters the driver information",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 9379010800,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "the user logged in as \"driver\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"driver\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_driver_information()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 275843700,
+              "duration": 8993500,
               "status": "passed"
             },
-            "line": 18,
-            "name": "the user should see following options",
+            "line": 10,
+            "name": "the user should be able to login",
             "match": {
-              "location": "com.vytrack.step_definitions.ContacsStepDefs.the_user_should_see_following_options(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Fleet"
-                ]
-              },
-              {
-                "cells": [
-                  "Customers"
-                ]
-              },
-              {
-                "cells": [
-                  "Activities"
-                ]
-              },
-              {
-                "cells": [
-                  "System"
-                ]
-              }
-            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@login"
+          },
+          {
+            "name": "@driver"
+          },
+          {
+            "name": "@VYT-123"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2953030700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-06T21:36:32.663Z",
+        "before": [
+          {
+            "result": {
+              "duration": 996400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login as a sales manager",
+        "description": "",
+        "id": "users-should-be-able-to-login;login-as-a-sales-manager",
+        "after": [
+          {
+            "result": {
+              "duration": 1079588400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4162639200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user enters the sales manager information",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_sales_manager_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6971400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@sales_manager"
+          },
+          {
+            "name": "@VYT-123"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5442756100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-06T21:36:40.885Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1006200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Login as a store manager",
+        "description": "",
+        "id": "users-should-be-able-to-login;login-as-a-store-manager",
+        "after": [
+          {
+            "result": {
+              "duration": 952218600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4072074300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user enters the store manager information",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_store_manager_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8996000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@store_manager"
           }
         ]
       }
     ],
-    "name": "Contacs page",
+    "name": "Users should be able to login",
     "description": "",
-    "id": "contacs-page",
+    "id": "users-should-be-able-to-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Contacts.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

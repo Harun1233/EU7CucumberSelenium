@@ -20,4 +20,4 @@ Feature: Contacs page
       | Customers   |
       | Activities  |
       | System      |
-      | Marketing   |
+

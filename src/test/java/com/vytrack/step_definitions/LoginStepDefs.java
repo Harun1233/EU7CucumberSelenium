@@ -78,6 +78,7 @@ public class LoginStepDefs {
 
     @When("the user logged in as {string}")
     public void the_user_logged_in_as(String userType) {
+        Driver.get().get(ConfigurationReader.get("url"));
        LoginPage loginPage=new LoginPage();
         switch (userType.toLowerCase()){
             case "driver":

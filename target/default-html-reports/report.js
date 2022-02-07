@@ -1,13 +1,74 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Contacts.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountTypes.feature");
 formatter.feature({
-  "name": "Contacs page",
+  "name": "Accout Types",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "login as a given user",
+formatter.scenarioOutline({
+  "name": "Login with different accounts",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user logged in as \"\u003cuserType\u003e\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "the user navigates to \"\u003ctab\u003e\" \"\u003cmodule\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "the title contains \"\u003ctitle\u003e\"",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "userType",
+        "tab",
+        "module",
+        "title"
+      ]
+    },
+    {
+      "cells": [
+        "driver",
+        "Activities",
+        "Calendar Events",
+        "Calendar Events - Activities"
+      ]
+    },
+    {
+      "cells": [
+        "sales manager",
+        "Customers",
+        "Accounts",
+        "Accounts - Customers"
+      ]
+    },
+    {
+      "cells": [
+        "store manager",
+        "Customers",
+        "Contacts",
+        "Contacts - Customers"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Login with different accounts",
+  "description": "",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@wip"
@@ -18,43 +79,127 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user is on the login page",
+  "name": "the user logged in as \"driver\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using following credentials",
-  "rows": [
-    {},
-    {},
-    {},
-    {}
-  ],
+  "name": "the user navigates to \"Activities\" \"Calendar Events\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.ContacsStepDefs.the_user_logs_in_using_following_credentials(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+  "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_user_navigates_to(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003cDoe[e]\u003e but was:\u003cDoe[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrack.step_definitions.ContacsStepDefs.the_user_logs_in_using_following_credentials(ContacsStepDefs.java:41)\r\n\tat ✽.the user logs in using following credentials(file:///C:/Users/Home/IdeaProjects/EU7CucumberSelenium/src/test/resources/features/Contacts.feature:32)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user should be able to login",
+  "name": "the title contains \"Calendar Events - Activities\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_title_contains(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Login with different accounts",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user logged in as \"sales manager\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user navigates to \"Customers\" \"Accounts\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_user_navigates_to(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the title contains \"Accounts - Customers\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_title_contains(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Login with different accounts",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user logged in as \"store manager\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user navigates to \"Customers\" \"Contacts\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_user_navigates_to(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the title contains \"Contacts - Customers\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_title_contains(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });

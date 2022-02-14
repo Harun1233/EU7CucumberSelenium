@@ -26,6 +26,7 @@ import org.openqa.selenium.safari.SafariDriver;
             // Test
             if (driver == null) {
                 // this line will tell which browser should open based on the value from properties file
+                //test
                 String browser = ConfigurationReader.get("browser");
                 switch (browser) {
                     case "chrome":
